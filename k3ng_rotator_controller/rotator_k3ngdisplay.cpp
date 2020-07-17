@@ -168,6 +168,10 @@ void K3NGdisplay::initialize(){
     lcd.noCursor();
   #endif  
 
+  #ifdef LCD_KEYPAD_SHIELD_1602
+    lcd.noCursor();
+  #endif 
+
   clear();
 
 
