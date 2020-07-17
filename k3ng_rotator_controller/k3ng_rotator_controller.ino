@@ -584,6 +584,10 @@
   #include <LiquidCrystal.h>  // required for classic 4 bit interface LCD display (FEATURE_4_BIT_LCD_DISPLAY)
 #endif // FEATURE_4_BIT_LCD_DISPLAY
 
+#ifdef LCD_KEYPAD_SHIELD_1602
+  #include <LiquidCrystal.h>  // required for LCD Keypad Shield 1602 (LCD_KEYPAD_SHIELD_1602)
+#endif // LCD_KEYPAD_SHIELD_1602
+
 #if defined(FEATURE_ADAFRUIT_I2C_LCD)
   #include <Adafruit_MCP23017.h> // required for Adafruit I2C LCD display
   #include <Adafruit_RGBLCDShield.h> // required for Adafruit I2C LCD display
