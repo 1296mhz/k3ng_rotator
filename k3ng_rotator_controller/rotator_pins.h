@@ -99,6 +99,9 @@
 #define lcd_4_bit_d6_pin 3
 #define lcd_4_bit_d7_pin 2
 
+#define lcd_keypad_shield_1602_rs_pin 8
+#define lcd_keypad_shield_1602_enable_pin 9
+
 
 #ifdef FEATURE_JOYSTICK_CONTROL
   #define pin_joystick_x A0
