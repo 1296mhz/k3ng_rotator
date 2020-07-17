@@ -17,6 +17,11 @@
   LiquidCrystal lcd(lcd_4_bit_rs_pin, lcd_4_bit_enable_pin, lcd_4_bit_d4_pin, lcd_4_bit_d5_pin, lcd_4_bit_d6_pin, lcd_4_bit_d7_pin);
 #endif // FEATURE_4_BIT_LCD_DISPLAY
 
+#ifdef LCD_KEYPAD_SHIELD_1602
+  #include <LiquidCrystal.h>
+  LiquidCrystal lcd(lcd_keypad_shield_1602_rs_pin, lcd_keypad_shield_1602_enable_pin, lcd_keypad_shield_1602_d4_pin, lcd_keypad_shield_1602_d5_pin, lcd_keypad_shield_1602_d6_pin, lcd_keypad_shield_1602_d7_pin);
+#endif // LCD_KEYPAD_SHIELD_1602
+
 #ifdef FEATURE_WIRE_SUPPORT
   #include <Wire.h>
 #endif
